@@ -9,6 +9,7 @@ const Nav = () => {
   let [providers, setProviders] = useState(null);
   let [toggleDropDown, setToggleDropDown] = useState(false);
   let { data: session } = useSession();
+
   useEffect(() => {
     const setMyProvider = async () => {
       const response = await getProviders();

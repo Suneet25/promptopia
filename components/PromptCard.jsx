@@ -1,15 +1,19 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-
-const PromptCard = ({ prompt, handleTagClick }) => {
+import { useSession } from "next-auth/react";
+import { usePathname, useRouter } from "next/navigation";
+const PromptCard = ({ prompt, handleTagClick, handleEdit, handleDelete }) => {
+  let pathname = usePathname();
+  let router = useRouter();
+  let { data: session } = useSession();
   let [copied, setCopied] = useState("");
-
-  let handleCopy=()=>{
+  let handleCopy = () => {
     setCopied(prompt.prompt);
     navigator.clipboard.writeText(prompt.prompt);
-    setTimeout(()=>setCopied(""),3000)
-  }
+    setTimeout(() => setCopied(""), 3000);
+  };
+
   return (
     <div className="prompt_card">
       <div className="flex justify-between items-start gap-5">
@@ -42,12 +46,27 @@ const PromptCard = ({ prompt, handleTagClick }) => {
           />
         </div>
       </div>
-      <p className="my-4 font-satoshi text-sm text-gray-700">
-        {prompt.prompt}
-      </p>
+      <p className="my-4 font-satoshi text-sm text-gray-700">{prompt.prompt}</p>
       <p className="font-inter text-sm blue_gradient cursor-pointer">
         {prompt.tag}
       </p>
+      {session?.user.id === prompt.creator._id && pathname==="/profile" && (
+        <div className="mt-5 flex-center gap-4  border-t border-gray-100 pt-3">
+          <p
+            className="font-inter text-sm green_gradient cursor-pointer"
+            onClick={handleEdit}
+          >
+            Edit
+          </p>
+          <p
+            className="font-inter text-sm orange_gradient cursor-pointer"
+            onClick={handleDelete}
+          >
+            Delete
+          </p>
+        </div>
+        
+      )}
     </div>
   );
 };
