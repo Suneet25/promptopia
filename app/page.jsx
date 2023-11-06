@@ -1,5 +1,6 @@
 import Feed from "@components/Feed";
 import React from "react";
+import { lusitana } from "./ui/font";
 
 const Home = () => {
   return (
@@ -13,9 +14,10 @@ const Home = () => {
           discover, create and share creative prompts
         </p>
       </h1>
-      <Feed/>
+      <Feed />
     </section>
   );
 };
 
 export default Home;
+
