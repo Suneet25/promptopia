@@ -1,14 +1,6 @@
+# Promptopia
 
- <h1>Promptopia</h1>
- 
- <h3>Description :</h3>
 Promptopia is an open-source AI prompting tool for modern world to discover, create and share creative prompts
-<h2>Deployed Link</h2>
-frontend and backend-
-https://promptopia-tau-seven-60.vercel.app/
-
-
- ---
 
 <h3>Tech Stack Used :</h3>
 
@@ -17,35 +9,63 @@ https://promptopia-tau-seven-60.vercel.app/
     <h5>⚡Tailwind CSS</h5>
     <h5>⚡Next Auth/h5>
 
-
 <h4> __Backend__</h4>
     <h5>⚡Node Js</h5>
     <h5>⚡MongoDB</h5>
     <h5>⚡Mongoose</h5>
     <h5>⚡Mongo Atlas</h5>
     <h5>⚡Bcrypt</h5>
-    
+
+## Teach-Stack
+
+| UI-Part |
+| ------- |
+
+|![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![Next](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+
+## Deployments
+
+| FRONTEND AND BACKEND |
+https://promptopia-tau-seven-60.vercel.app/
+
+| ----------------------------------------------------------------------------------------------------- | --- |
+| ![vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white) | !   |
+
+## For using this application locally follow the mentioned steps
+
+1. Clone the repo
+2. Do `npm install`
+3. For starting the application go to `promptopia` file
+4. Run this command in the `promptopia` folder `npm run dev` to run the application locally
+
+### :small_blue_diamond: chat page
+
+Clean UI
+
 ---
 
-<h3>Features :</h3>
-<h5>✨Home Page with Navbar</h5>
-<h5>✨Private Routes Authentication</h5>
-<h5>✨Single Prompt Page</h5>
-<h5>✨Authorized User can edit an delete their prompt</h5>
-<h5>✨Login/Logout/Register with Next Auth</h5>
+## ![image](./chatapp/src/assets/pic1.png)
 
----
+### :small_blue_diamond: Dark mode and mentioning on clicking "@"
 
-<h3>Some Glimps of Project :</h3>
-<h5>✨Home Page with Navbar and Footer</h5>
-<img src="https://github.com/swati082001/inquisitive-discovery-2388/blob/master/glimpse%20of%20projects/home%20%26%20Nav.png"/>
+## ![image](./chatapp/src/assets/pic2.png)
 
-<h5>✨Login Page</h5>
-<img src="https://github.com/swati082001/inquisitive-discovery-2388/blob/master/glimpse%20of%20projects/login.png"/>
+### :small_blue_diamond: Emoji
 
-<h5>✨Register Page</h5>
-<img src="https://github.com/swati082001/inquisitive-discovery-2388/blob/master/glimpse%20of%20projects/register.png"/>
+## ![image](./chatapp/src/assets/pic3.png)
 
-<h5>✨Products Page</h5>
-<img src="https://github.com/swati082001/inquisitive-discovery-2388/blob/master/glimpse%20of%20projects/product.png"/>
+![image](./chatapp/src/assets/pic4.png)
 
+## API Routes
+
+The following table lists the available API routes and their descriptions:
+
+| Route           | Method   | Description             |
+| --------------- | -------- | ----------------------- |
+| /api/prompt     | `GET`    | Get all user's prompts  |
+| /api/prompt/new | `POST`   | To post a prompt        |
+| /api/prompt/id  | `PUT`    | To update a prompt      |
+| /api/prompt/id  | `DELETE` | To update a prompt      |
+| /api/prompt/id  | `DELETE` | To visit user's profile |
+
+Thank you 💙
