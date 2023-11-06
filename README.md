@@ -38,7 +38,7 @@ https://promptopia-tau-seven-60.vercel.app/
 3. For starting the application go to `promptopia` file
 4. Run this command in the `promptopia` folder `npm run dev` to run the application locally
 
-### :small_blue_diamond: chat page
+### :small_blue_diamond: Prompts page
 
 Clean UI
 
