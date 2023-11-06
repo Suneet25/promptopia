@@ -1,34 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+ <h1>Promptopia</h1>
+ 
+ <h3>Description :</h3>
+Promptopia is an open-source AI prompting tool for modern world to discover, create and share creative prompts
+<h2>Deployed Link</h2>
+frontend and backend-
+https://promptopia-tau-seven-60.vercel.app/
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+ ---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<h3>Tech Stack Used :</h3>
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+<h4> __FrontEnd__ </h4>
+    <h5>⚡Next JS 13(App Router)</h5>
+    <h5>⚡Tailwind CSS</h5>
+    <h5>⚡Next Auth/h5>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+<h4> __Backend__</h4>
+    <h5>⚡Node Js</h5>
+    <h5>⚡MongoDB</h5>
+    <h5>⚡Mongoose</h5>
+    <h5>⚡Mongo Atlas</h5>
+    <h5>⚡Bcrypt</h5>
+    
+---
 
-To learn more about Next.js, take a look at the following resources:
+<h3>Features :</h3>
+<h5>✨Home Page with Navbar</h5>
+<h5>✨Private Routes Authentication</h5>
+<h5>✨Single Prompt Page</h5>
+<h5>✨Authorized User can edit an delete their prompt</h5>
+<h5>✨Login/Logout/Register with Next Auth</h5>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<h3>Some Glimps of Project :</h3>
+<h5>✨Home Page with Navbar and Footer</h5>
+<img src="https://github.com/swati082001/inquisitive-discovery-2388/blob/master/glimpse%20of%20projects/home%20%26%20Nav.png"/>
 
-## Deploy on Vercel
+<h5>✨Login Page</h5>
+<img src="https://github.com/swati082001/inquisitive-discovery-2388/blob/master/glimpse%20of%20projects/login.png"/>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<h5>✨Register Page</h5>
+<img src="https://github.com/swati082001/inquisitive-discovery-2388/blob/master/glimpse%20of%20projects/register.png"/>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<h5>✨Products Page</h5>
+<img src="https://github.com/swati082001/inquisitive-discovery-2388/blob/master/glimpse%20of%20projects/product.png"/>
+
