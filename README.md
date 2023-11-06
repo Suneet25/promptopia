@@ -44,17 +44,17 @@ Clean UI
 
 ---
 
-## ![image](./chatapp/src/assets/pic1.png)
+## ![image](./public/assets/images/image1.png)
 
-### :small_blue_diamond: Dark mode and mentioning on clicking "@"
+### :small_blue_diamond: 
 
-## ![image](./chatapp/src/assets/pic2.png)
+## ![image](./public/assets/images/image2.png)
 
-### :small_blue_diamond: Emoji
+### :small_blue_diamond: 
 
-## ![image](./chatapp/src/assets/pic3.png)
+## ![image](./public/assets/images/image3.png)
 
-![image](./chatapp/src/assets/pic4.png)
+![image](./public/assets/images/image4.png)
 
 ## API Routes
 
