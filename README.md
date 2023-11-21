@@ -72,6 +72,6 @@ The following table lists the available API routes and their descriptions:
 | /api/prompt/new | `POST`   | To post a prompt        |
 | /api/prompt/id  | `PUT`    | To update a prompt      |
 | /api/prompt/id  | `DELETE` | To update a prompt      |
-| /api/prompt/id  | `DELETE` | To visit user's profile |
+| /api/prompt/id  | `GET` | To visit user's profile |
 
 Thank you 💙
