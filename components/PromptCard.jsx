@@ -72,7 +72,7 @@ const PromptCard = ({ prompt, handleTagClick, handleEdit, handleDelete }) => {
         </p>
 
         <WhatsappShareButton
-          url={"https://promptopia-prompts.vercel.app/"}
+          url={"https://promptopia-chats.vercel.app/"}
           title={prompt.prompt}
           separator="--"
         >
