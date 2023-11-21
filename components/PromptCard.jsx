@@ -28,7 +28,7 @@ const PromptCard = ({ prompt, handleTagClick, handleEdit, handleDelete }) => {
   };
 
   return (
-    <div className="prompt_card">
+    <div className={pathname === "/" ? "prompt_card" : "prompt_card h-[300px]"}>
       <div className="flex justify-between items-start gap-5">
         <div
           className="flex-1 flex justify-start items-center gap-3 cursor-pointer"
@@ -62,7 +62,9 @@ const PromptCard = ({ prompt, handleTagClick, handleEdit, handleDelete }) => {
           />
         </div>
       </div>
-      <p className="my-4 font-satoshi text-sm text-gray-700 h-[50px]">{prompt.prompt}</p>
+      <p className="my-4 font-satoshi text-sm text-gray-700 h-[50px]">
+        {prompt.prompt}
+      </p>
       <div className="flex justify-between items-center mt-7">
         <p
           className="font-inter text-sm blue_gradient cursor-pointer"
