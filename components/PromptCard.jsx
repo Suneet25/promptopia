@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { useSession } from "next-auth/react";
 import { usePathname, useRouter } from "next/navigation";
+import { WhatsappShareButton, WhatsappIcon } from "next-share";
 const PromptCard = ({ prompt, handleTagClick, handleEdit, handleDelete }) => {
   let pathname = usePathname();
   let router = useRouter();
@@ -62,12 +63,22 @@ const PromptCard = ({ prompt, handleTagClick, handleEdit, handleDelete }) => {
         </div>
       </div>
       <p className="my-4 font-satoshi text-sm text-gray-700">{prompt.prompt}</p>
-      <p
-        className="font-inter text-sm blue_gradient cursor-pointer"
-        onClick={() => handleTagClick(prompt.tag)}
-      >
-        {prompt.tag}
-      </p>
+      <div className="flex justify-between items-center">
+        <p
+          className="font-inter text-sm blue_gradient cursor-pointer"
+          onClick={() => handleTagClick(prompt.tag)}
+        >
+          {prompt.tag}
+        </p>
+
+        <WhatsappShareButton
+          url={"https://promptopia-prompts.vercel.app/"}
+          title={prompt.prompt}
+          separator="--"
+        >
+          <WhatsappIcon size={28} round />
+        </WhatsappShareButton>
+      </div>
       {session?.user.id === prompt.creator._id && pathname === "/profile" && (
         <div className="mt-5 flex-center gap-4  border-t border-gray-100 pt-3">
           <p
