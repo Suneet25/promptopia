@@ -62,7 +62,8 @@ const PromptCard = ({ prompt, handleTagClick, handleEdit, handleDelete }) => {
           />
         </div>
       </div>
-      <p className="my-4 font-satoshi text-sm text-gray-700 h-[50px]">{prompt.prompt}</p>
+      <p className="my-4 font-satoshi text-sm text-gray-700 h-[60px] line-clamp-3">{prompt.prompt}</p>
+      
       <div className="flex justify-between items-center mt-7">
         <p
           className="font-inter text-sm blue_gradient cursor-pointer"
@@ -80,7 +81,7 @@ const PromptCard = ({ prompt, handleTagClick, handleEdit, handleDelete }) => {
         </WhatsappShareButton>
       </div>
       {session?.user.id === prompt.creator._id && pathname === "/profile" && (
-        <div className="mt-5 flex-center gap-4  border-t border-gray-100 pt-3">
+        <div className=" flex-center gap-4  border-t border-gray-100 pb-5">
           <p
             className="font-inter text-sm green_gradient cursor-pointer"
             onClick={handleEdit}
