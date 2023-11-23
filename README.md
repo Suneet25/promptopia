@@ -26,7 +26,7 @@ Promptopia is an open-source AI prompting tool for modern world to discover, cre
 ## Deployments
 
 | FRONTEND AND BACKEND |
-https://promptopia-tau-seven-60.vercel.app/
+https://promptopia-chats.vercel.app/
 
 | ----------------------------------------------------------------------------------------------------- | --- |
 | ![vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white) | !   |
